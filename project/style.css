@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+body{
+    font-family: 'Merriweather', serif;
+    background-color:#bbcdee;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: white;
+}
+/* .navbar_brand{
+
+    width: 100px ;
+
+} */
+.navbar_nav_brand{
+    width: 100px;
+}
+.navbar_logo{
+    width: 100%;
+}
+.nav__item{
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    margin: 0;
+}
+.container{
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+.hero_image_conatiner{
+    width: 100%;
+}
+.hero_image{
+    width: 100%;
+    border-radius: 6px;
+    box-shadow:0 25px 50px -12px rgba(47, 14, 108, 0.25); ;
+}
+
+.nav__item:hover{
+   border: 2px solid #FF6767;
+   cursor: pointer;
+
+}
+.hero_txt{
+    font-weight: 800;
+    font-size: 30px;
+    margin: 20px 0;
+    color: #1d3557;
+}
+.food_txt{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color:white;
+    text-shadow:2px 2px #0000;
+}
+.food_card_image{
+    width: 100%;
+    
+    
+}
+.food_image{
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+}
+.food_card_container{
+    background-color: white;
+    margin-bottom: 20px;
+}
+.food_card_description{
+    padding: 15px;
+    
+}
+.pizza{
+    width: 100%;
+}
+.burgir{
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .navbar{
+        justify-content: space-between;
+        padding: 10px 30px ; 
+        
+    }
+    .hero_container{
+        margin-top: 20px ;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .food_list{
+        display: flex;
+        gap: 15px;
+        margin: 20px;
+    }
+    #pizza_card{
+        margin-top: -20px;
+        margin-bottom: 50px;
+    }
+    .food-title{
+        padding-bottom: 30px;
+        font-size: 50px;
+
+    }
+    .food_card_description{
+        padding-bottom: 0px;
+    }
+    .food_container{
+        position: relative;
+    }
+    .food_grad{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right,
+        #ff512f 0%, #dd2476 51%, #ff512f 100%
+        );
+        z-index: -3;
+        transform: skew(-5deg);
+    }
+    
+
+}
+@media (min-width: 1024px) {
+    .container{
+        max-width: 70%;
+    }
+    .navbar_nav_brand{
+        width: 120px;
+        }
+        .nav__item{
+            padding: 15px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        /* .hero_container{
+            margin: 50px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        } */
+        .hero_description{
+            width: 100%;
+            padding-right: 20px;
+
+        }
+        .hero_txt{
+            font-size: 50px;
+        }
+        .food_list{
+            display: flex;
+            gap: 20px;
+        }
+    }
